@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".personal"
+        android:background="?attr/colorBackgroundFloating"
+       >
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Educational Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#312878"
+            android:textSize="30sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        >
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_property"
+            android:paddingTop="30sp"
+            android:text="SSC"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t1"/>
+
+
+        <EditText
+            android:id="@+id/s1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:drawableBottom="@android:color/holo_blue_dark"
+            android:fadingEdge="horizontal"
+            android:fitsSystemWindows="true"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#2196F3"
+            android:soundEffectsEnabled="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:hint="School Name"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview1"/>
+
+        <EditText
+            android:id="@+id/s2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:hint="Percentage"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/s1"/>
+
+        <EditText
+            android:id="@+id/s3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:hint="Year of Passing"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/s2"/>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_property"
+            android:paddingTop="30sp"
+            android:text="HSC/Diploma"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/s3"/>
+        <EditText
+            android:id="@+id/d1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:drawableBottom="@android:color/holo_blue_dark"
+            android:fadingEdge="horizontal"
+            android:fitsSystemWindows="true"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#2196F3"
+            android:soundEffectsEnabled="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:hint="Collage Name"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview2"/>
+
+        <EditText
+            android:id="@+id/d2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:hint="Percentage"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d1"/>
+
+        <EditText
+            android:id="@+id/d3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:hint="Year of Passing"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d2"/>
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_property"
+            android:paddingTop="30sp"
+            android:text="BE/BTec"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/d3"/>
+        <EditText
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:drawableBottom="@android:color/holo_blue_dark"
+            android:fadingEdge="horizontal"
+            android:fitsSystemWindows="true"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#2196F3"
+            android:soundEffectsEnabled="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:hint="Collage Name"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview3"/>
+
+        <EditText
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:hint="Percentage"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b1"/>
+
+        <EditText
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:hint="Year of Passing"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b2"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/view_property"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:textColor="#312878"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_navigate_next_black_24dp"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/b3"
+            android:layout_marginHorizontal="@android:dimen/thumbnail_width"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

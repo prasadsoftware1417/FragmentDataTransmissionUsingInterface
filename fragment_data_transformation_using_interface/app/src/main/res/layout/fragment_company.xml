@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".company"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".personal"
+        android:background="?attr/colorBackgroundFloating">
+
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Details"
+            android:background="@drawable/view_property"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#312878"
+            android:textSize="30sp"
+            android:paddingLeft="20sp"
+            android:paddingTop="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/fn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:drawableBottom="@android:color/holo_blue_dark"
+            android:fadingEdge="horizontal"
+            android:fitsSystemWindows="true"
+            android:hint="Full Name"
+            android:selectAllOnFocus="true"
+            android:shadowColor="#2196F3"
+            android:soundEffectsEnabled="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview1"
+            />
+
+        <EditText
+            android:id="@+id/comname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:hint="Enter Company Name"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fn"/>
+
+        <EditText
+            android:id="@+id/jobp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:hint="Job Profile"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:paddingLeft="20sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comname"/>
+
+
+        <EditText
+            android:id="@+id/salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_round"
+            android:focusable="auto"
+            android:hint="Salary"
+            android:paddingLeft="20sp"
+            android:textColor="#1D8DE9"
+            android:textSize="24sp"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jobp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/view_property"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="#312878"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_margin="10sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salary"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
